@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { db } from './firebase';
-import { collection, addDoc, doc, updateDoc, deleteDoc, onSnapshot, query } from 'firebase/firestore';
+import { collection, addDoc, onSnapshot, query } from 'firebase/firestore';
 
 interface Criterio {
   item: string;
@@ -659,7 +659,7 @@ export default function App() {
                 type="submit"
                 style={{
                   padding: '14px 26px',
-                  backgroundColor: 'linear-gradient(135deg, #10b981, #059669)',
+                  background: 'linear-gradient(135deg, #10b981, #059669)',
                   backgroundColor: '#10b981', // Fallback
                   color: 'white',
                   border: 'none',
